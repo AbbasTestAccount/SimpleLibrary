@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ir.shabrangkala.simplelibrary.databinding.ActivityMainBinding
 
-lateinit var binding: ActivityMainBinding
+private lateinit var binding: ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

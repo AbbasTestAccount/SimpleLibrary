@@ -6,10 +6,9 @@ import android.os.Bundle
 import ir.shabrangkala.simplelibrary.databinding.ActivitySplashBinding
 import java.util.Timer
 import kotlin.concurrent.timerTask
-import kotlin.collections.ArrayList
 import kotlin.random.Random
 
-lateinit var splashBinding: ActivitySplashBinding
+private lateinit var binding: ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
 
@@ -21,15 +20,23 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        splashBinding = ActivitySplashBinding.inflate(layoutInflater)
-        setContentView(splashBinding.root)
+        binding = ActivitySplashBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        splashBinding.note.text = notes[Random(System.nanoTime()).nextInt(0, notes.size)]
+        binding.note.text = notes[Random(System.nanoTime()).nextInt(0, notes.size)]
 
         Timer().schedule(timerTask {
             val intent = Intent(this@SplashActivity, MainActivity::class.java)
             startActivity(intent)
             finish()
         }, 4000)
+
+        for (i in 0..100){
+            Timer().schedule(timerTask {
+                runOnUiThread {
+                    binding.readyPercent.text = "$i %"
+                }
+            }, (i*40).toLong())
+        }
     }
 }
