@@ -12,7 +12,7 @@ private lateinit var binding: ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
 
-    val notes = arrayListOf<String>(" یک کتاب خوب، بهترین دوست و همدم انسان می باشد.",
+    private val notes = arrayListOf<String>(" یک کتاب خوب، بهترین دوست و همدم انسان می باشد.",
         "خانه بدون کتاب روز بدون خورشید است",
         "یک کتاب، هزار نفر را می آموزد.",
         " یک کتاب خوب، بهترین دوست و همدم انسان می باشد.",
