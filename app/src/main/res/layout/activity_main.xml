@@ -47,29 +47,18 @@
 
     </FrameLayout>
 
-    <ScrollView
-        android:layout_width="405dp"
-        android:layout_height="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <FrameLayout
+        android:id="@+id/main_frame_for_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBar"
-        android:layout_marginBottom="56dp">
-
-        <FrameLayout
-            android:id="@+id/main_frame_for_fragments"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/topBar">
+        app:layout_constraintTop_toBottomOf="@+id/topBar">
 
 
-        </FrameLayout>
-
-    </ScrollView>
+    </FrameLayout>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
