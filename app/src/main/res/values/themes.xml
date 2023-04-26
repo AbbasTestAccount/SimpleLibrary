@@ -25,4 +25,12 @@
         <item name="android:textStyle">bold</item>
 
     </style>
+
+    <style name="author_name">
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/round</item>
+        <item name="android:textStyle">bold</item>
+        <item name="color">@color/black</item>
+
+    </style>
 </resources>

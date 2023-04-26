@@ -21,12 +21,18 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //loading most viewed book's pictures
+        //loading most viewed books pictures
         loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/99791_82810_normal.jpg?width=200" , binding.imageView1)
         loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/86186_36247_normal.jpg?width=200" , binding.imageView2)
         loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/136671_72256_normal.jpg?width=200" , binding.imageView3)
         loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/68120_12778_normal.jpg?width=200" , binding.imageView4)
         loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/69249_94233_normal.jpg?width=200" , binding.imageView5)
+
+        //loading famous authors pics
+        loadImageWithGlide(view,"https://www.ketabrah.ir/img/authors/a-1355.jpg" , binding.imageView6)
+        loadImageWithGlide(view,"https://www.ketabrah.ir/img/authors/a-1312.jpg" , binding.imageView7)
+        loadImageWithGlide(view,"https://www.ketabrah.ir/img/authors/a-6744.jpg" , binding.imageView8)
+
 
 
 
