@@ -23,10 +23,10 @@ class HomeFragment : Fragment() {
 
         //loading most viewed book's pictures
         loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/99791_82810_normal.jpg?width=200" , binding.imageView1)
-        loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/99791_82810_normal.jpg?width=200" , binding.imageView2)
-        loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/99791_82810_normal.jpg?width=200" , binding.imageView3)
-        loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/99791_82810_normal.jpg?width=200" , binding.imageView4)
-        loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/99791_82810_normal.jpg?width=200" , binding.imageView5)
+        loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/86186_36247_normal.jpg?width=200" , binding.imageView2)
+        loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/136671_72256_normal.jpg?width=200" , binding.imageView3)
+        loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/68120_12778_normal.jpg?width=200" , binding.imageView4)
+        loadImageWithGlide(view,"https://newcdn.fidibo.com/images/books/69249_94233_normal.jpg?width=200" , binding.imageView5)
 
 
 
