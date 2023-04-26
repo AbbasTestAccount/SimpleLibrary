@@ -5,9 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import ir.shabrangkala.simplelibrary.databinding.HomeFragmentBinding
 import ir.shabrangkala.simplelibrary.databinding.ProfileFragmentBinding
-import ir.shabrangkala.simplelibrary.databinding.SearchFragmentBinding
 
 class ProfileFragment : Fragment() {
     lateinit var binding: ProfileFragmentBinding
