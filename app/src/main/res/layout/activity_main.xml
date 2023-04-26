@@ -16,6 +16,7 @@
             app:title="@string/app_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryVariant"
             app:titleTextAppearance="@style/MyAppToolBar"/>
     </com.google.android.material.appbar.AppBarLayout>
 <!--    <FrameLayout-->
