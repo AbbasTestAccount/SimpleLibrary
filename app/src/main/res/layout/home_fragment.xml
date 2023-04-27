@@ -1,306 +1,472 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:clickable="true"
-        android:elevation="10dp"
-        app:cardCornerRadius="10dp">
-
-        <ImageView
-            android:id="@+id/imageView0"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/first_banner"
-
-            />
-
-
-    </com.google.android.material.card.MaterialCardView>
-
-<!--most visited-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#EDEDED"
-        android:orientation="vertical"
-        android:paddingBottom="10dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <FrameLayout
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/imageView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/first_banner"
+
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--most visited-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEFD4"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/title_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginRight="10dp"
+                    android:text="The most visited books" />
+
+                <ImageView
+                    android:id="@+id/moreOfMostViewed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/left_arrow" />
+
+
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layoutDirection="rtl"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:elevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="120dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:elevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="120dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:elevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="120dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:elevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="120dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:elevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="120dp"
+                            android:layout_height="180dp"
+                            android:scaleType="fitXY"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!--popular authors-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
 
             <TextView
-                android:id="@+id/textView4"
                 style="@style/title_font"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end|center"
                 android:layout_marginRight="10dp"
-                android:text="The most visited books" />
+                android:text="Popular authors" />
 
-            <ImageView
-                android:id="@+id/moreOfMostViewed"
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start|center"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/left_arrow" />
+                android:scrollbars="none">
 
-
-        </FrameLayout>
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layoutDirection="rtl"
-            android:scrollbars="none">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal">
-
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:clickable="true"
-                    android:elevation="4dp">
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/imageView1"
-                        android:layout_width="120dp"
-                        android:layout_height="180dp"
-                        android:scaleType="fitXY"
-                        tools:srcCompat="@tools:sample/avatars" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
 
-                </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="360dp">
 
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:clickable="true"
-                    android:elevation="4dp">
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                tools:srcCompat="@tools:sample/avatars" />
+                        </com.google.android.material.card.MaterialCardView>
 
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="120dp"
-                        android:layout_height="180dp"
-                        android:scaleType="fitXY"
-                        tools:srcCompat="@tools:sample/avatars" />
+                        <TextView
+                            style="@style/author_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="چارلز دیکنز" />
 
-                </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
 
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:clickable="true"
-                    android:elevation="4dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="120dp"
-                        android:layout_height="180dp"
-                        android:scaleType="fitXY"
-                        tools:srcCompat="@tools:sample/avatars" />
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="360dp">
 
-                </com.google.android.material.card.MaterialCardView>
+                            <ImageView
+                                android:id="@+id/imageView7"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                tools:srcCompat="@tools:sample/avatars" />
+                        </com.google.android.material.card.MaterialCardView>
 
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:clickable="true"
-                    android:elevation="4dp">
+                        <TextView
+                            style="@style/author_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="جلال آل‌ احمد" />
 
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="120dp"
-                        android:layout_height="180dp"
-                        android:scaleType="fitXY"
-                        tools:srcCompat="@tools:sample/avatars" />
-
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:clickable="true"
-                    android:elevation="4dp">
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="120dp"
-                        android:layout_height="180dp"
-                        android:scaleType="fitXY"
-                        tools:srcCompat="@tools:sample/avatars" />
-
-                </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
 
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-        </HorizontalScrollView>
-    </LinearLayout>
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4dp"
+                            app:cardCornerRadius="360dp">
 
-<!--popular authors-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layoutDirection="rtl"
-        android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                tools:srcCompat="@tools:sample/avatars" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            style="@style/author_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:text="احمد شاملو" />
+
+                    </LinearLayout>
 
 
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <!--simple line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:background="#C1C1C1" />
+
+        <!--popular topics-->
         <TextView
             style="@style/title_font"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
-            android:text="Popular authors" />
+            android:text="popular topics" />
 
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="none">
+            android:layout_margin="10dp"
+            android:elevation="90dp"
+            android:layoutDirection="rtl"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:orientation="horizontal">
+                android:background="#FFEFD4"
+                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <FrameLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:clickable="true"
-                        android:elevation="4dp"
-                        app:cardCornerRadius="360dp">
-
-                        <ImageView
-                            android:id="@+id/imageView6"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center"
-                            android:scaleType="fitXY"
-                            tools:srcCompat="@tools:sample/avatars" />
-                    </com.google.android.material.card.MaterialCardView>
+                    android:layout_marginTop="10dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal">
 
                     <TextView
-                        style="@style/author_name"
+                        android:id="@+id/foreign_novel_text"
+                        style="@style/popular_topics"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="4dp"
-                        android:text="چارلز دیکنز" />
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        android:text="The most visited books" />
 
-                </LinearLayout>
+                    <ImageView
+                        android:id="@+id/moreOfForeignNovel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/left_arrow" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#C1C1C1" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:clickable="true"
-                        android:elevation="4dp"
-                        app:cardCornerRadius="360dp">
-
-                        <ImageView
-                            android:id="@+id/imageView7"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center"
-                            android:scaleType="fitXY"
-                            tools:srcCompat="@tools:sample/avatars" />
-                    </com.google.android.material.card.MaterialCardView>
+                    android:layout_marginTop="10dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal">
 
                     <TextView
-                        style="@style/author_name"
+                        android:id="@+id/iranian_novel_text"
+                        style="@style/popular_topics"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="4dp"
-                        android:text="جلال آل‌ احمد" />
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        android:text="The most visited books" />
 
-                </LinearLayout>
+                    <ImageView
+                        android:id="@+id/moreOfIranianNovel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/left_arrow" />
 
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#C1C1C1" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.card.MaterialCardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:clickable="true"
-                        android:elevation="4dp"
-                        app:cardCornerRadius="360dp">
-
-                        <ImageView
-                            android:id="@+id/imageView8"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center"
-                            android:scaleType="fitXY"
-                            tools:srcCompat="@tools:sample/avatars" />
-                    </com.google.android.material.card.MaterialCardView>
+                    android:layout_marginTop="10dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal">
 
                     <TextView
-                        style="@style/author_name"
+                        android:id="@+id/child_text"
+                        style="@style/popular_topics"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="4dp"
-                        android:text="احمد شاملو" />
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        android:text="The most visited books" />
 
-                </LinearLayout>
+                    <ImageView
+                        android:id="@+id/moreOfChild"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/left_arrow" />
+
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#C1C1C1" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/history_text"
+                        style="@style/popular_topics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        android:text="The most visited books" />
+
+                    <ImageView
+                        android:id="@+id/moreOfHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/left_arrow" />
+
+
+                </FrameLayout>
 
 
             </LinearLayout>
-
-        </HorizontalScrollView>
+        </com.google.android.material.card.MaterialCardView>
 
 
     </LinearLayout>
-
-<!--simple line-->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        />
-
-
-
-</LinearLayout>
+</ScrollView>
