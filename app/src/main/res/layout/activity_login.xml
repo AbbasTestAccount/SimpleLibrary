@@ -50,6 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text" />
@@ -73,9 +74,13 @@
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username_textField">
+        app:layout_constraintTop_toBottomOf="@+id/username_textField"
+        app:helperText="Passwords have at least a capital letter !"
+        app:helperTextEnabled="true"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
@@ -107,7 +112,7 @@
         android:background="#B6B6B6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
     <TextView
         android:id="@+id/textView7"
