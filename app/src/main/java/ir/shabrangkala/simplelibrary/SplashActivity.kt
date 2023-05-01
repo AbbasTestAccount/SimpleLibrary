@@ -26,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
         binding.note.text = notes[Random(System.nanoTime()).nextInt(0, notes.size)]
 
         Timer().schedule(timerTask {
-            val intent = Intent(this@SplashActivity, MainActivity::class.java)
+            val intent = Intent(this@SplashActivity, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, 4000)
