@@ -8,6 +8,7 @@ import android.widget.ImageView
 import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
+import ir.shabrangkala.simplelibrary.R
 import ir.shabrangkala.simplelibrary.databinding.HomeFragmentBinding
 
 class HomeFragment : Fragment() {
@@ -33,9 +34,12 @@ class HomeFragment : Fragment() {
         loadImageWithGlide(view,"https://www.ketabrah.ir/img/authors/a-1312.jpg" , binding.imageView7)
         loadImageWithGlide(view,"https://www.ketabrah.ir/img/authors/a-6744.jpg" , binding.imageView8)
 
-
-
-
+        binding.moreOfMostViewed.setOnClickListener {
+            val transaction = parentFragmentManager.beginTransaction()
+            transaction.replace(R.id.main_frame_for_fragments, MostViewedFragment())
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
 
     }
 
