@@ -51,7 +51,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun startFrag(){
-        setFrag(HomeFragment())
+
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.main_frame_for_fragments, HomeFragment())
+        transaction.commit()
+
         binding.bottomNavigationView.selectedItemId = R.id.home_icon
     }
 }
