@@ -9,7 +9,6 @@ import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import ir.shabrangkala.simplelibrary.fragments.Book
 
 
 class BookAdapter(private val data : ArrayList<Book>):RecyclerView.Adapter<BookAdapter.BookViewHolder>() {

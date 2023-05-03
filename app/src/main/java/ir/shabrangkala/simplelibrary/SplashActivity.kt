@@ -8,9 +8,9 @@ import java.util.Timer
 import kotlin.concurrent.timerTask
 import kotlin.random.Random
 
-private lateinit var binding: ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
+    private lateinit var binding: ActivitySplashBinding
 
     private val notes = arrayListOf<String>(" یک کتاب خوب، بهترین دوست و همدم انسان می باشد.",
         "خانه بدون کتاب روز بدون خورشید است",

@@ -1,4 +1,4 @@
-package ir.shabrangkala.simplelibrary.fragments
+package ir.shabrangkala.simplelibrary
 
 data class Book(
     val imgURL: String,
