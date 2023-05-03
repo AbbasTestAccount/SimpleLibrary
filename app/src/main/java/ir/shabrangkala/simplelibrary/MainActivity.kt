@@ -36,7 +36,12 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        binding.bottomNavigationView.setOnItemReselectedListener { //do nothing right now
+        binding.bottomNavigationView.setOnItemReselectedListener {
+            when(it.itemId){
+                R.id.home_icon -> {
+                    setFrag(HomeFragment())
+                }
+            }
         }
 
 
