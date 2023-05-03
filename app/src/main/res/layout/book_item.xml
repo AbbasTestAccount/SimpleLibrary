@@ -30,9 +30,10 @@
                 android:elevation="10dp">
 
                 <ImageView
-                    android:id="@+id/imageViewa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/bookImage"
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY"
                     tools:srcCompat="@tools:sample/avatars" />
 
             </com.google.android.material.card.MaterialCardView>
@@ -40,7 +41,7 @@
 
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/bookName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -53,13 +54,13 @@
 
             <TextView
                 android:singleLine="true"
-                android:id="@+id/textView9"
+                android:id="@+id/authorName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="author"
-                app:layout_constraintEnd_toEndOf="@+id/textView8"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintEnd_toEndOf="@+id/bookName"
+                app:layout_constraintTop_toBottomOf="@+id/bookName" />
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -67,15 +68,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="30dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView"
-                app:layout_constraintEnd_toEndOf="@+id/textView9">
+                app:layout_constraintEnd_toEndOf="@+id/authorName">
 
                 <RatingBar
+                    android:id="@+id/rateBooks"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:rating="3" />
+                    android:rating="3"
+                    android:progressTint="?attr/colorPrimary"
+                    />
 
                 <TextView
+                    android:id="@+id/numRate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -84,6 +89,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="78,000 تومان"
