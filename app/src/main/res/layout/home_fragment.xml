@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:clickable="true"
-            android:elevation="10dp"
+            app:cardElevation="10dp"
             app:cardCornerRadius="10dp">
 
             <ImageView
@@ -83,7 +83,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:clickable="true"
-                        android:elevation="4dp">
+                        app:cardElevation="4dp"
+                        >
 
                         <ImageView
                             android:id="@+id/imageView1"
@@ -99,7 +100,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:clickable="true"
-                        android:elevation="4dp">
+                        app:cardElevation="4dp"
+                        >
 
                         <ImageView
                             android:id="@+id/imageView2"
@@ -115,7 +117,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:clickable="true"
-                        android:elevation="4dp">
+                        app:cardElevation="4dp"
+                        >
 
                         <ImageView
                             android:id="@+id/imageView3"
@@ -131,7 +134,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:clickable="true"
-                        android:elevation="4dp">
+                        app:cardElevation="4dp"
+                        >
 
                         <ImageView
                             android:id="@+id/imageView4"
@@ -147,7 +151,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:clickable="true"
-                        android:elevation="4dp">
+                        app:cardElevation="4dp"
+                        >
 
                         <ImageView
                             android:id="@+id/imageView5"
@@ -204,7 +209,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:clickable="true"
-                            android:elevation="4dp"
+                            app:cardElevation="4dp"
                             app:cardCornerRadius="360dp">
 
                             <ImageView
@@ -236,7 +241,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:clickable="true"
-                            android:elevation="4dp"
+                            app:cardElevation="4dp"
                             app:cardCornerRadius="360dp">
 
                             <ImageView
@@ -268,7 +273,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:clickable="true"
-                            android:elevation="4dp"
+                            app:cardElevation="4dp"
                             app:cardCornerRadius="360dp">
 
                             <ImageView
@@ -321,7 +326,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:elevation="90dp"
+            app:cardElevation="8dp"
             android:layoutDirection="rtl"
             android:padding="10dp"
             app:cardCornerRadius="10dp">
