@@ -5,13 +5,12 @@
         android:id="@+id/basket"
         android:icon="@drawable/shopping_basket"
         android:title="shoppingBasket"
-        app:showAsAction="always"
-
+        app:showAsAction="collapseActionView"
         />
     <item
         android:id="@+id/account"
         android:icon="@drawable/account"
         android:title="account"
-        app:showAsAction="always"/>
+        app:showAsAction="collapseActionView"/>
 
 </menu>
