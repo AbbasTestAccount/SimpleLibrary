@@ -11,6 +11,7 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
         <!-- Customize your theme here. -->
     </style>
     <style name="MyAppToolBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -36,5 +37,11 @@
         <item name="android:textSize">14dp</item>
         <item name="fontFamily">@font/round</item>
         <item name="color">@color/black</item>
+    </style>
+
+
+    <style name="Other">
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>
