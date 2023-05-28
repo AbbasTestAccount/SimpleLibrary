@@ -1,6 +1,8 @@
 package ir.shabrangkala.simplelibrary
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.TranslateAnimation
@@ -23,15 +25,21 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //sharedPreferences
+        val sharedPreferences = getSharedPreferences("logon data", Context.MODE_PRIVATE)
+
+
         binding.loginButton.setOnClickListener {
 
             if (binding.username.text.toString().isEmpty()){
                 errorAnim("Enter your user name !!!", binding.usernameTextField)
             }else{
                 binding.usernameTextField.error = null
+                sharedPreferences.edit().putString("username", binding.username.text.toString()).apply()
             }
 
             if (checkInputs(binding.username.text.toString(), binding.password.text.toString())){
+                sharedPreferences.edit().putString("password", binding.password.text.toString()).apply()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
@@ -40,6 +48,13 @@ class LoginActivity : AppCompatActivity() {
                 errorAnim("Passwords have at least a capital letter !", binding.passwordTextField)
             }
         }
+
+        binding.username.setText(sharedPreferences.getString("username", ""))
+        binding.password.setText(sharedPreferences.getString("password", ""))
+
+
+
+
     }
 
     private fun errorAnim(errorText : String, textInputLayout: TextInputLayout){
