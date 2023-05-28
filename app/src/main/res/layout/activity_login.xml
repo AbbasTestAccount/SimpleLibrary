@@ -45,6 +45,7 @@
         app:boxCornerRadiusTopStart="15dp"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
+        app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5">
@@ -72,12 +73,12 @@
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
         app:endIconMode="password_toggle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username_textField"
+        app:errorEnabled="true"
         app:helperText="Passwords have at least a capital letter !"
         app:helperTextEnabled="true"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_textField">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
@@ -144,8 +145,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:clickable="true"
-            app:cardElevation="4dp"
             app:cardCornerRadius="360dp"
+            app:cardElevation="4dp"
             app:layout_constraintEnd_toEndOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
             app:strokeColor="#939393"
@@ -165,8 +166,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:clickable="true"
-            app:cardElevation="4dp"
             app:cardCornerRadius="360dp"
+            app:cardElevation="4dp"
             app:layout_constraintEnd_toStartOf="@+id/materialCardView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
